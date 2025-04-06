@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join the Sacred Circle | Soul Practice</title>
     <base href="/" />
-    <!-- Import MailerLite fonts -->
+    <!-- MailerLite fonts & embed CSS -->
     <style type="text/css">
       @import url("https://assets.mlcdn.com/fonts.css?version=1743581");
-    </style>
-    <!-- Paste all the CSS from your MailerLite embed here -->
-    <style type="text/css">
-      /* LOADER */
+      /* START OF MAILERLITE EMBED CSS */
+      /* (Paste the full MailerLite embed CSS here or leave as-is if it's already inline) */
       .ml-form-embedSubmitLoad {
         display: inline-block;
         width: 20px;
@@ -31,7 +29,7 @@
         padding: 0;
         margin: -1px;
         overflow: hidden;
-        clip: rect(0, 0, 0, 0);
+        clip: rect(0,0,0,0);
         border: 0;
       }
       .ml-form-embedSubmitLoad:after {
@@ -46,15 +44,101 @@
         animation: ml-form-embedSubmitLoad 1.2s linear infinite;
       }
       @keyframes ml-form-embedSubmitLoad {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
       }
-      /* (Continue pasting the rest of your provided CSS here) */
-      /* ... */
+      #mlb2-24530903.ml-form-embedContainer {
+        box-sizing: border-box;
+        display: table;
+        margin: 0 auto;
+        position: static;
+        width: 100% !important;
+      }
+      #mlb2-24530903.ml-form-embedContainer h4,
+      #mlb2-24530903.ml-form-embedContainer p,
+      #mlb2-24530903.ml-form-embedContainer span,
+      #mlb2-24530903.ml-form-embedContainer button {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+      }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper {
+        background-color: #C7A491;
+        border-width: 0px;
+        border-color: transparent;
+        border-radius: 4px;
+        border-style: solid;
+        box-sizing: border-box;
+        display: inline-block !important;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper.embedDefault { width: 400px; }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 400px; width: 100%; }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-align-left { text-align: left; }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-align-center { text-align: center; }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-align-default { display: table-cell !important; vertical-align: middle !important; text-align: center !important; }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-align-right { text-align: right; }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedHeader img {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        height: auto;
+        margin: 0 auto !important;
+        max-width: 100%;
+        width: 2423px;
+      }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+        padding: 20px 20px 0 20px;
+      }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody.ml-form-embedBodyHorizontal {
+        padding-bottom: 0;
+      }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent {
+        text-align: left;
+        margin: 0 0 20px 0;
+      }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4,
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+        color: #F5EEE2;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+        text-align: left;
+        word-break: break-word;
+      }
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
+      #mlb2-24530903.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+        color: #221E1B;
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0 0 10px 0;
+        text-align: left;
+      }
+      /* (Additional MailerLite CSS rules go here) */
+      /* END OF MAILERLITE EMBED CSS */
+    </style>
+    <!-- Custom CSS overrides -->
+    <style>
+      /* Adjust header image to be responsive */
+      .ml-form-embedHeader img {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+      }
+      /* Increase subscribe box container size */
+      .ml-form-embedWrapper.embedForm {
+        max-width: 600px !important;
+        width: 80% !important;
+        margin: 20px auto;
+      }
     </style>
   </head>
   <body style="margin: 0; background-color: #F5EEE2; font-family: 'Georgia', serif;">
@@ -65,10 +149,8 @@
           <div class="ml-form-embedHeader">
             <img src="https://storage.mlcdn.com/account_image/1433396/vnQtO1xj1B50haxtrUinGbhcXwtW8nn3WZApQ2mn.png" border="0" style="display: block;">
             <style>
-              @media only screen and (max-width: 400px) {
-                .ml-form-embedHeader {
-                  display: none !important;
-                }
+              @media only screen and (max-width: 400px){
+                .ml-form-embedHeader { display: none !important; }
               }
             </style>
           </div>
@@ -81,12 +163,10 @@
               <div class="ml-form-formContent">
                 <div class="ml-form-fieldRow ml-last-item">
                   <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                    <!-- Email input -->
                     <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
                   </div>
                 </div>
               </div>
-              <!-- Hidden inputs -->
               <input type="hidden" name="ml-submit" value="1">
               <div class="ml-form-embedSubmit">
                 <button type="submit" class="primary">Subscribe</button>
@@ -121,3 +201,4 @@
     </script>
   </body>
 </html>
+
