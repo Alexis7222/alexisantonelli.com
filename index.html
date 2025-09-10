@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Soul With Lexi</title>
 
   <style>
     /* Full-page background GIF */
     body {
       margin: 0;
-      padding: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWw5cjUwazJ4amV6d3ZsdXIxc245bWczb3gzdjBqM2I3ZnVxem9wcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/87U0hxgCZ5mnz4dKlC/giphy.gif") no-repeat center center fixed;
+      background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHZwdHplbTRseGcwN3AzNXkybTNrMDhleHJrMXdpd201cmM1MHdpNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xur099boo4N9aU/giphy.gif")
+        no-repeat center center fixed;
       background-size: cover;
+      font-family: Georgia, serif;
     }
 
-    /* Style the signup box */
+    /* Shared container for BOTH ConvertKit + Calendly */
+    .signup-container {
+      width: min(900px, 95vw);
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(2px);
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      text-align: center;
+    }
+
+    /* Make ConvertKit content centered and let the outer box handle background */
     .convertkit-form,
     .formkit-form,
     .formkit-container {
       text-align: center !important;
-      font-family: Georgia, serif !important;
-      background: rgba(255, 255, 255, 0.85); /* white overlay so text stays readable */
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+      background: transparent !important;
     }
-
     .convertkit-form h1,
     .convertkit-form h2,
     .convertkit-form h3,
     .convertkit-form p {
       text-align: center !important;
-      color: #000; /* adjust if you want a different font color */
+      color: #000 !important;
+    }
+
+    /* Calendly sizing */
+    .calendly-inline-widget {
+      min-width: 320px;
+      height: 660px; /* tweak if you want more/less height */
+      margin-top: 20px; /* space between Kit and Calendly */
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 480px) {
+      .signup-container { padding: 16px; }
+      .calendly-inline-widget { height: 760px; }
     }
   </style>
 </head>
 <body>
-  <!-- Your Kit embed -->
-  <script async data-uid="3db7479028" src="https://soulwithlexi.kit.com/3db7479028/index.js"></script>
+  <div class="signup-container">
+    <!-- ConvertKit embed -->
+    <script async data-uid="3db7479028" src="https://soulwithlexi.kit.com/3db7479028/index.js"></script>
+
+    <!-- Calendly inline widget -->
+    <div
+      class="calendly-inline-widget"
+      data-url="https://calendly.com/YOUR-USERNAME">
+    </div>
+  </div>
+
+  <!-- Calendly script (required for inline widget) -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
-
-
-
-
