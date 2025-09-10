@@ -6,30 +6,36 @@
   <title>Soul With Lexi</title>
 
   <style>
-    /* Center everything on the page */
+    /* Full-page background GIF */
     body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      background-color: #fff; /* optional */
+      background: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHZwdHplbTRseGcwN3AzNXkybTNrMDhleHJrMXdpd201cmM1MHdpNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oz8xur099boo4N9aU/giphy.gif") no-repeat center center fixed;
+      background-size: cover;
     }
 
-    /* Override Kit's box */
+    /* Style the signup box */
     .convertkit-form,
     .formkit-form,
     .formkit-container {
       text-align: center !important;
-      font-family: Courier New !important; /* you can change font */
+      font-family: Georgia, serif !important;
+      background: rgba(255, 255, 255, 0.85); /* white overlay so text stays readable */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
     }
 
-    /* Center headings and paragraphs */
     .convertkit-form h1,
     .convertkit-form h2,
     .convertkit-form h3,
     .convertkit-form p {
       text-align: center !important;
+      color: #000; /* adjust if you want a different font color */
     }
   </style>
 </head>
@@ -38,6 +44,7 @@
   <script async data-uid="3db7479028" src="https://soulwithlexi.kit.com/3db7479028/index.js"></script>
 </body>
 </html>
+
 
 
 
